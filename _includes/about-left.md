@@ -7,9 +7,9 @@ Design is about problem solving with visual tools. Whether it's colors, typograp
 - Illustrator
 - InDesign
 - Adobe XD
-- Dreamweaver
+- Sketch
+- Figma
 - Premiere Pro
 - After Effects
 - Lightroom
-- Sketch
 - FontLab
