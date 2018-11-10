@@ -54,31 +54,5 @@ layout: default
 </div>
 </article>
 
-<article id="dev" class="work-types">
-   <span id="goto-dev" class="nav-adjust"></span>
-   <h2>Development Work</h2>
-   <div>
-    <ul>
-       {% for post in site.posts %}
-          {% if post.category contains "dev" %}
-             <li>
-                <a href="{{ post.dev-url }}">
-                   <figure>
-                      <img src="{{ site.baseurl }}/assets/work/thumbnails/{{ post.thumbnail }}" alt="{{ post.title }}" />
-                   </figure>
-                   <div class="caption">
-                      <h3>{{ post.title }}</h3>
-                      <p>{{ post.disciplines }}</p>
-                   </div>
-                </a>
-             </li>
-          {% endif %}
-       {% endfor %}
-       <div class="spacer"></div>
-    </ul>
-<div class="spacer"></div>
-</div>
-</article>
-
 <!-- {% if post.visible %}
 {% endif %} -->
