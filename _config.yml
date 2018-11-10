@@ -9,8 +9,8 @@
 title: Atiyya Shahab
 email: hi@atiyya.net
 description: Designer, Front End Web Developer, Illustrator
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://atiyya.net" # the base hostname & protocol for your site
+baseurl: "atiyya-jekyll" # the subpath of your site, e.g. /blog
+url: "https://atiyya.github.io" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
