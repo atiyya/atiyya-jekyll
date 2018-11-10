@@ -1,0 +1,32 @@
+body {
+   font-family: $sans-serif;
+   line-height: 1.618;
+   color: $blue-dianne;
+}
+@media all and (min-width: $medium) {
+   body {
+      font-size: 18/16*1em;
+   }
+}
+p { margin-bottom: 1rem; }
+p:last-child { margin-bottom: 0; }
+
+/* Links
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+a, #work *, aside *, form * {
+   transition: .7s;
+}
+a, a:visited {
+   color: $envy;
+}
+p {
+   a {
+      text-decoration: none;
+      border-bottom: 2/16*1rem $mystic-cream solid;
+      padding-bottom: 1/16*1rem;
+   }
+}
+a:hover, a:active {
+   color: $mona-pink;
+   border-bottom-color: $cream;
+}

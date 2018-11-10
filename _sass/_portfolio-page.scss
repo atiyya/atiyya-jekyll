@@ -1,0 +1,253 @@
+/* Portfolio Page
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+.banner {
+   position: relative;
+   img {
+      display: block;
+   }
+   .bounce-arrow {
+      display: none;
+   }
+}
+#portfolio .details {
+   @extend .center;
+   margin-bottom: 32/16*1rem;
+   h2 {
+      margin: 0;
+      background: none;
+      text-align: left;
+      letter-spacing: .1rem;
+      padding: 0;
+      line-height: 1em;
+      height: auto;
+   }
+   h2 + h3 {
+      font-size: 1rem;
+      font-weight: normal;
+      letter-spacing: normal;
+      text-transform: none;
+      color: lighten($blue-dianne, 20%);
+   }
+}
+.title {
+   border-top: 1/16*1rem $mystic-cream solid;
+   border-bottom: 1/16*1rem $mystic-cream solid;
+   margin: 32/16*1rem 0 24/16*1rem;
+   padding: 24/16*1rem 0 19/16*1rem;
+}
+figure {
+   margin-bottom: 32/16*1rem;
+   > div {
+      background-color: white;
+      &.device { text-align: center; }
+   }
+   &.logo > div {
+      padding: 1.5rem;
+      @media all and (min-width: $tablet) {
+         padding: 14vw;
+      }
+   }
+   img {
+      display: block;
+   }
+   &.design-image {
+     > div { border: none; }
+     img {
+       max-height: 85vh;
+       width: auto;
+       max-width: 100%;
+     }
+   }
+   > div, &.design-image img {
+     border: 1/16*1rem $mystic-cream solid;
+   }
+}
+figcaption {
+   text-transform: uppercase;
+   letter-spacing: .1em;
+   color: $envy;
+   font-size: 14/16*1rem;
+   margin-top: 8/16*1rem;
+}
+.browser {
+   overflow-y: scroll;
+}
+.vimeo-embed {
+   text-align: center;
+}
+@media all and (min-width: $tablet) {
+   .banner {
+      padding-top: 6.85rem;
+      .bounce-arrow {
+         display: block;
+         position: absolute;
+         bottom: 1.5rem;
+         text-align: center;
+         width: 100%;
+         span {
+            border: 3/16*1rem white solid;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 2rem;
+            line-height: 2rem;
+         }
+      }
+   }
+   #portfolio {
+      .details {
+         margin-top: 3.5rem;
+         margin-bottom: 3rem;
+         .title, .text { margin-top: 0rem; }
+         .title {
+            width: 39%;
+            float: left;
+            padding-top: 0;
+            border-top: none;
+         }
+         .text {
+            width: 57%;
+            float: right;
+         }
+      }
+   }
+   figure.desktop, figure.tablet, figure.mobile {
+      .device {
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-position: center;
+         width: 100%;
+         overflow: hidden;
+      }
+      .browser {
+         position: relative;
+         margin: 0 auto;
+         // opacity: .5;
+      }
+   }
+   figure.desktop {
+      .device {
+         background-image: url(../assets/site-design/web-containers/laptop.svg);
+         height: 52vw;
+      }
+      .browser {
+         top: 5.5vw;
+         height: 38.2vw;
+         width: 60vw;
+      }
+   }
+   figure.tablet {
+      .device {
+         background-image: url(../assets/site-design/web-containers/tablet.svg);
+         height: 98vw;
+      }
+      .browser {
+         top: 11vw;
+         height: 76.2vw;
+         width: 57vw;
+      }
+   }
+   figure.mobile {
+      .device {
+         background-image: url(../assets/site-design/web-containers/mobile.svg);
+         height: 73vw;
+      }
+      .browser {
+         top: 10vw;
+         height: 53vw;
+         width: 30vw;
+      }
+   }
+}
+@media all and (min-width: $tablet-landscape) {
+   .responsive {
+      figure.tablet, figure.mobile {
+         .device {
+            height: 71vw;
+         }
+      }
+      figure.tablet {
+         width: 60%;
+         float: left;
+         .browser {
+            top: 8vw;
+            height: 55vw;
+            width: 41vw;
+         }
+      }
+      figure.mobile {
+         width: 37%;
+         float: right;
+         .browser {
+            top: 13.5vw;
+            height: 44vw;
+            width: 25vw;
+         }
+      }
+   }
+   .app {
+      figure.mobile {
+         width: 48%;
+         float: left;
+         &:nth-child(even) { float: right; }
+         .device {
+            height: 53vw;
+         }
+         .browser {
+            top: 7.3vw;
+            height: 38.5vw;
+            width: 22vw;
+         }
+      }
+   }
+}
+@media all and (min-width: $medium) {
+   .banner {
+      .bounce-arrow {
+         bottom: 3rem;
+      }
+   }
+   #portfolio .details {
+      margin-top: 6.5rem;
+      margin-bottom: 6rem;
+   }
+}
+@media all and (min-width: 1084/16*1em) {
+   figure.logo {
+      > div { padding: 8vw 14vw; }
+   }
+   #portfolio {
+      .details, .center {
+         width: 60%;
+      }
+   }
+   figure.desktop {
+      .device {
+         height: 38vw;
+      }
+      .browser {
+         top: 4.5vw;
+         height: 27vw;
+         width: 42.5vw;
+      }
+   }
+   .responsive {
+      figure.tablet, figure.mobile {
+         .device { height: 50vw; }
+      }
+      figure.tablet {
+         .browser {
+            top: 5.5vw;
+            height: 39vw;
+            width: 29vw;
+         }
+      }
+      figure.mobile {
+         .browser {
+            top: 9.5vw;
+            height: 31.2vw;
+            width: 17.5vw;
+         }
+      }
+   }
+}

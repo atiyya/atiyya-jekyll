@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+   {% include head.html %}
+   <body id="home">
+      {% include header.html %}
+      <main>
+         {% include home-section.html %}
+         {{ content }}
+         {% include about.html %}
+         {% include contact.html %}
+      </main>
+   {% include footer.html %}
+   </body>
+</html>

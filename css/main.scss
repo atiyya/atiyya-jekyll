@@ -1,0 +1,31 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* Colors
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+$blue-dianne: #244C5A;
+$mona-pink: #FFAD93;
+$cream: #F8F5F3;
+$mystic-cream: #F2F6F5;
+$envy: #94A596;
+$olive: #6D712E;
+
+/* Fonts
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+$sans-serif: 'Proxima Nova', proxima-nova, 'Helvetica Neue', Helvetica, sans-serif;
+
+/* Responsive Sizes
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+$tablet: 812/16*1em;
+$tablet-landscape: 1024/16*1em;
+$medium: 1400/16*1em;
+
+/* Import partials from `sass_dir` (defaults to `_sass`)
+––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+@import
+        "reset",
+        "base",
+        "layout"
+;

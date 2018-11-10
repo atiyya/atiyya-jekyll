@@ -1,0 +1,30 @@
+<article id="about">
+   <span id="goto-about" class="nav-adjust"></span>
+   <h2>About Me</h2>
+   <div class="text">
+      <div class="intro">
+         <div class="profile-pic">
+            <img src="{{ site.baseurl }}/assets/site-design/profile.jpg" alt="Atiyya Shahab" />
+         </div>
+         {% capture about-p-first %}{% include about-p-first.md %}{% endcapture %}
+         {{ about-p-first | markdownify }}
+      </div>
+      <div class="details">
+         <section class="left-brain">
+            <div class="image">&nbsp;</div>
+            <div class="text">
+               {% capture about-left %}{% include about-left.md %}{% endcapture %}
+               {{ about-left | markdownify }}
+            </div>
+         </section>
+         <section class="right-brain">
+            <div class="image">&nbsp;</div>
+            <div class="text">
+               {% capture about-right %}{% include about-right.md %}{% endcapture %}
+               {{ about-right | markdownify }}
+            </div>
+         </section>
+      </div>
+   </div>
+   <div class="spacer"></div>
+</article>

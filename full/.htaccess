@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Full Portfolio"
+AuthUserFile "/home/atiyyane/public_html/full/.htpasswd"
+require valid-user

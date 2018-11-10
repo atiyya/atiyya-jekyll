@@ -1,0 +1,594 @@
+---
+layout: portfolio
+---
+
+<article>
+   {% if page.banner %}
+      <div class="banner">
+         <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.banner }}" alt="{{ page.title }}" onerror="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.banner-backup }}" />
+         <div class="bounce-arrow">
+            <span class="fa fa-angle-down"></span>
+         </div>
+      </div>
+   {% endif %}
+   <div class="details">
+      <div class="title">
+         <h2>{{ page.title }}</h2>
+         <h3>{{ page.disciplines }}</h3>
+      </div>
+      <div class="text">
+         {{ content }}
+      </div>
+      <div class="spacer"></div>
+   </div>
+   <div class="center">
+      {% if page.logo %}
+         <div class="logo-intro">
+      {% endif %}
+
+      {% if page.logo %}
+         <figure class="logo">
+            <div>
+               <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.logo }}" alt="{{ page.title }}" onerror="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.logo-backup }}" />
+            </div>
+            <figcaption>
+               Logo
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.logo %}
+         </div>
+      {% endif %}
+
+      {% if page.desktop %}
+         <figure class="web desktop">
+            <div class="device">
+               <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.desktop }}" alt="{{ page.title }} web desktop" /></div>
+            </div>
+            <figcaption>
+               {% if page.web-label %}
+                  {{ page.web-label }} &ndash; Desktop
+               {% else %}
+                  Web &ndash; Desktop
+               {% endif %}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.tablet %}{% if page.mobile %}
+         <div class="responsive">
+            <figure class="web tablet">
+               <div class="device">
+                  <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.tablet }}" alt="web tablet" /></div>
+               </div>
+               <figcaption>
+                  {% if page.web-label %}
+                     {{ page.web-label }} &ndash; Tablet
+                  {% else %}
+                     Web &ndash; Tablet
+                  {% endif %}
+               </figcaption>
+            </figure>
+            <figure class="web mobile">
+               <div class="device">
+                  <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.mobile }}" alt="web mobile" /></div>
+               </div>
+               <figcaption>
+                  {% if page.web-label %}
+                     {{ page.web-label }} &ndash; Mobile
+                  {% else %}
+                     Web &ndash; Mobile
+                  {% endif %}
+               </figcaption>
+            </figure>
+            <div class="spacer"></div>
+         </div>
+         <div class="spacer"></div>
+      {% endif %}{% endif %}
+
+      {% if page.desktop-2 %}
+         <figure class="web desktop">
+            <div class="device">
+               <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.desktop-2 }}" alt="{{ page.title }} web desktop" /></div>
+            </div>
+            <figcaption>
+               {% if page.web-2-label %}
+                  {{ page.web-2-label }} &ndash; Desktop
+               {% else %}
+                  Web &ndash; Desktop
+               {% endif %}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.tablet-2 %}{% if page.mobile-2 %}
+         <div class="responsive">
+            <figure class="web tablet">
+               <div class="device">
+                  <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.tablet-2 }}" alt="web tablet" /></div>
+               </div>
+               <figcaption>
+                  {% if page.web-2-label %}
+                     {{ page.web-2-label }} &ndash; Tablet
+                  {% else %}
+                     Web &ndash; Tablet
+                  {% endif %}
+               </figcaption>
+            </figure>
+            <figure class="web mobile">
+               <div class="device">
+                  <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.mobile-2 }}" alt="web mobile" /></div>
+               </div>
+               <figcaption>
+                  {% if page.web-2-label %}
+                     {{ page.web-2-label }} &ndash; Mobile
+                  {% else %}
+                     Web &ndash; Mobile
+                  {% endif %}
+               </figcaption>
+            </figure>
+         </div>
+      {% endif %}{% endif %}
+
+      {% if page.desktop-3 %}
+         <figure class="web desktop">
+            <div class="device">
+               <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.desktop-3 }}" alt="{{ page.title }} web desktop" /></div>
+            </div>
+            <figcaption>
+               {% if page.web-3-label %}
+                  {{ page.web-3-label }} &ndash; Desktop
+               {% else %}
+                  Web &ndash; Desktop
+               {% endif %}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.tablet-3 %}{% if page.mobile-3 %}
+         <div class="responsive">
+            <figure class="web tablet">
+               <div class="device">
+                  <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.tablet-3 }}" alt="web tablet" /></div>
+               </div>
+               <figcaption>
+                  {% if page.web-3-label %}
+                     {{ page.web-3-label }} &ndash; Tablet
+                  {% else %}
+                     Web &ndash; Tablet
+                  {% endif %}
+               </figcaption>
+            </figure>
+            <figure class="web mobile">
+               <div class="device">
+                  <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.mobile-3 }}" alt="web mobile" /></div>
+               </div>
+               <figcaption>
+                  {% if page.web-3-label %}
+                     {{ page.web-3-label }} &ndash; Mobile
+                  {% else %}
+                     Web &ndash; Mobile
+                  {% endif %}
+               </figcaption>
+            </figure>
+         </div>
+      {% endif %}{% endif %}
+
+      {% if page.desktop-4 %}
+         <figure class="web desktop">
+            <div class="device">
+               <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.desktop-4 }}" alt="{{ page.title }} web desktop" /></div>
+            </div>
+            <figcaption>
+               {% if page.web-4-label %}
+                  {{ page.web-4-label }} &ndash; Desktop
+               {% else %}
+                  Web &ndash; Desktop
+               {% endif %}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.tablet-4 %}{% if page.mobile-4 %}
+         <div class="responsive">
+            <figure class="web tablet">
+               <div class="device">
+                  <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.tablet-4 }}" alt="web tablet" /></div>
+               </div>
+               <figcaption>
+                  {% if page.web-4-label %}
+                     {{ page.web-4-label }} &ndash; Tablet
+                  {% else %}
+                     Web &ndash; Tablet
+                  {% endif %}
+               </figcaption>
+            </figure>
+            <figure class="web mobile">
+               <div class="device">
+                  <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.mobile-4 }}" alt="web mobile" /></div>
+               </div>
+               <figcaption>
+                  {% if page.web-4-label %}
+                     {{ page.web-4-label }} &ndash; Mobile
+                  {% else %}
+                     Web &ndash; Mobile
+                  {% endif %}
+               </figcaption>
+            </figure>
+         </div>
+      {% endif %}{% endif %}
+
+      {% if page.app %}
+         <div class="app">
+            <figure class="web mobile">
+               <div class="device">
+                  <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.app }}" alt="app screen" /></div>
+               </div>
+               <figcaption>
+                  {% if page.app-label %}
+                     {{ page.app-label }}
+                  {% else %}
+                     App Screen
+                  {% endif %}
+               </figcaption>
+            </figure>
+            {% if page.app-2 %}
+            <figure class="web mobile">
+               <div class="device">
+                  <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.app-2 }}" alt="app screen" /></div>
+               </div>
+               <figcaption>
+                  {% if page.app-2-label %}
+                     {{ page.app-2-label }}
+                  {% else %}
+                     App Screen
+                  {% endif %}
+               </figcaption>
+            </figure>
+            {% endif %}
+            {% if page.app-3 %}
+            <figure class="web mobile">
+               <div class="device">
+                  <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.app-3 }}" alt="app screen" /></div>
+               </div>
+               <figcaption>
+                  {% if page.app-3-label %}
+                     {{ page.app-3-label }}
+                  {% else %}
+                     App Screen
+                  {% endif %}
+               </figcaption>
+            </figure>
+            {% endif %}
+            {% if page.app-4 %}
+            <figure class="web mobile">
+               <div class="device">
+                  <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.app-4 }}" alt="app screen" /></div>
+               </div>
+               <figcaption>
+                  {% if page.app-4-label %}
+                     {{ page.app-4-label }}
+                  {% else %}
+                     App Screen
+                  {% endif %}
+               </figcaption>
+            </figure>
+            {% endif %}
+            {% if page.app-5 %}
+            <figure class="web mobile">
+               <div class="device">
+                  <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.app-5 }}" alt="app screen" /></div>
+               </div>
+               <figcaption>
+                  {% if page.app-5-label %}
+                     {{ page.app-5-label }}
+                  {% else %}
+                     App Screen
+                  {% endif %}
+               </figcaption>
+            </figure>
+            {% endif %}
+            {% if page.app-6 %}
+            <figure class="web mobile">
+               <div class="device">
+                  <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.app-6 }}" alt="app screen" /></div>
+               </div>
+               <figcaption>
+                  {% if page.app-6-label %}
+                     {{ page.app-6-label }}
+                  {% else %}
+                     App Screen
+                  {% endif %}
+               </figcaption>
+            </figure>
+            {% endif %}
+            {% if page.app-7 %}
+            <figure class="web mobile">
+               <div class="device">
+                  <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.app-7 }}" alt="app screen" /></div>
+               </div>
+               <figcaption>
+                  {% if page.app-7-label %}
+                     {{ page.app-7-label }}
+                  {% else %}
+                     App Screen
+                  {% endif %}
+               </figcaption>
+            </figure>
+            {% endif %}
+            {% if page.app-8 %}
+            <figure class="web mobile">
+               <div class="device">
+                  <div class="browser"><img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.app-8 }}" alt="app screen" /></div>
+               </div>
+               <figcaption>
+                  {% if page.app-8-label %}
+                     {{ page.app-8-label }}
+                  {% else %}
+                     App Screen
+                  {% endif %}
+               </figcaption>
+            </figure>
+            {% endif %}
+            <div class="spacer"></div>
+         </div>
+      {% endif %}
+
+      {% if page.popapp-url %}
+      <figure class="iframe">
+         <div class="device">
+            <iframe src="{{ page.popapp-url }}" width="420" height="908" frameborder="0" allowTransparency="true"></iframe>
+         </div>
+         <figcaption>Process Work: POP App User Testing</figcaption>
+      </figure>
+      {% endif %}
+
+      {% if page.invision %}
+      <figure class="iframe">
+         <div class="device">
+            <iframe width="438" height="930" src="{{ page.invision }}" frameborder="0" allowfullscreen></iframe>
+         </div>
+         <figcaption>
+            Invision Prototype
+            {% if page.invision-backup %}
+               <a href="{{ page.invision-backup }}">(External Link Backup)</a>
+            {% endif %}
+         </figcaption>
+      </figure>
+      {% endif %}
+
+      {% if page.design-image %}
+         <figure class="design-image">
+            <div>
+               <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.design-image }}" alt="{{ page.title }} {{ page.design-image-label }}" />
+            </div>
+            <figcaption>
+               {{ page.design-image-label }}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.design-image-2 %}
+         <figure class="design-image">
+            <div>
+               <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.design-image-2 }}" alt="{{ page.title }} {{ page.design-image-2-label }}" />
+            </div>
+            <figcaption>
+               {{ page.design-image-2-label }}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.design-image-3 %}
+         <figure class="design-image">
+            <div>
+               <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.design-image-3 }}" alt="{{ page.title }} {{ page.design-image-3-label }}" />
+            </div>
+            <figcaption>
+               {{ page.design-image-3-label }}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.design-image-4 %}
+         <figure class="design-image">
+            <div>
+               <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.design-image-4 }}" alt="{{ page.title }} {{ page.design-image-4-label }}" />
+            </div>
+            <figcaption>
+               {{ page.design-image-4-label }}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.design-image-5 %}
+         <figure class="design-image">
+            <div>
+               <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.design-image-5 }}" alt="{{ page.title }} {{ page.design-image-5-label }}" />
+            </div>
+            <figcaption>
+               {{ page.design-image-5-label }}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.design-image-6 %}
+         <figure class="design-image">
+            <div>
+               <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.design-image-6 }}" alt="{{ page.title }} {{ page.design-image-6-label }}" />
+            </div>
+            <figcaption>
+               {{ page.design-image-6-label }}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.design-image-7 %}
+         <figure class="design-image">
+            <div>
+               <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.design-image-7 }}" alt="{{ page.title }} {{ page.design-image-7-label }}" />
+            </div>
+            <figcaption>
+               {{ page.design-image-7-label }}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.design-image-8 %}
+         <figure class="design-image">
+            <div>
+               <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.design-image-8 }}" alt="{{ page.title }} {{ page.design-image-8-label }}" />
+            </div>
+            <figcaption>
+               {{ page.design-image-8-label }}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.design-image-9 %}
+         <figure class="design-image">
+            <div>
+               <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.design-image-9 }}" alt="{{ page.title }} {{ page.design-image-9-label }}" />
+            </div>
+            <figcaption>
+               {{ page.design-image-9-label }}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.design-image-10 %}
+         <figure class="design-image">
+            <div>
+               <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.design-image-10 }}" alt="{{ page.title }} {{ page.design-image-10-label }}" />
+            </div>
+            <figcaption>
+               {{ page.design-image-10-label }}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.design-image-11 %}
+         <figure class="design-image">
+            <div>
+               <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.design-image-11 }}" alt="{{ page.title }} {{ page.design-image-11-label }}" />
+            </div>
+            <figcaption>
+               {{ page.design-image-11-label }}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.design-image-12 %}
+         <figure class="design-image">
+            <div>
+               <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.design-image-12 }}" alt="{{ page.title }} {{ page.design-image-12-label }}" />
+            </div>
+            <figcaption>
+               {{ page.design-image-12-label }}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.vimeo %}
+         <figure>
+            <div class="vimeo-embed">
+               <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://player.vimeo.com/video/{{ page.vimeo }}' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+            </div>
+            {% if page.vimeo-caption %}
+               <figcaption>
+                  {{ page.vimeo-caption }}
+               </figcaption>
+            {% endif %}
+         </figure>
+      {% endif %}
+
+
+
+      {% if page.process-image %}
+         <div class="spacer"></div>
+         <figure>
+            <div>
+               <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.process-image }}" alt="{{ page.title }} {{ page.process-image-label }}" />
+            </div>
+            <figcaption>
+               {{ page.process-image-label }}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.process-image-2 %}
+         <figure>
+            <div>
+               <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.process-image-2 }}" alt="{{ page.title }} {{ page.process-image-2-label }}" />
+            </div>
+            <figcaption>
+               {{ page.process-image-2-label }}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+      {% if page.process-image-3 %}
+         <figure>
+            <div>
+               <img src="{{ site.baseurl }}/assets/work/{{ page.assets-folder }}/{{ page.process-image-3 }}" alt="{{ page.title }} {{ page.process-image-3-label }}" />
+            </div>
+            <figcaption>
+               {{ page.process-image-3-label }}
+            </figcaption>
+         </figure>
+      {% endif %}
+
+   </div>
+</article>
+
+<aside>
+   {% if page.category contains "design" %}
+    <h2>More Graphic Design Projects</h2>
+    <div>
+       <ul>
+          {% for post in site.posts %}
+            {% if post.category contains "design" %}
+              <li>
+                 <a href="{{ post.url | prepend: site.baseurl }}">
+                    <figure>
+                       <img src="{{ site.baseurl }}/assets/work/thumbnails/{{ post.thumbnail }}" alt="{{ post.title }}" />
+                    </figure>
+                    <div class="caption">
+                       <h3>{{ post.title }}</h3>
+                       <p>{{ post.disciplines }}</p>
+                    </div>
+                 </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+          <div class="spacer"></div>
+       </ul>
+       <div class="spacer"></div>
+    </div>
+   {% endif %}
+   {% if page.category contains "illustration" %}
+    <h2>More Illustration Projects</h2>
+    <div>
+       <ul>
+          {% for post in site.posts %}
+            {% if post.category contains "illustration" %}
+              <li>
+                 <a href="{{ post.url | prepend: site.baseurl }}">
+                    <figure>
+                       <img src="{{ site.baseurl }}/assets/work/thumbnails/{{ post.thumbnail }}" alt="{{ post.title }}" />
+                    </figure>
+                    <div class="caption">
+                       <h3>{{ post.title }}</h3>
+                       <p>{{ post.disciplines }}</p>
+                    </div>
+                 </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+          <div class="spacer"></div>
+       </ul>
+       <div class="spacer"></div>
+    </div>
+   {% endif %}
+</aside><!-- als-container end -->

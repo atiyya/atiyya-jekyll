@@ -1,0 +1,10 @@
+<article id="home-section">
+   <div class="text">
+      {% capture home-section-text %}{% include home-section-text.md %}{% endcapture %}
+      {{ home-section-text | markdownify }}
+   </div>
+   <a href="#goto-work" class="button">View Work</a>
+   <div class="bounce-arrow">
+      <span class="fa fa-angle-down"></span>
+   </div>
+</article>
