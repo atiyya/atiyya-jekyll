@@ -17,5 +17,4 @@ Development is about bringing things to life and preparing for the future.
 - Wordpress
 - Jekyll
 - Symphony
-- Liquid
 - Textpattern
