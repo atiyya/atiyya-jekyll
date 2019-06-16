@@ -524,24 +524,26 @@ form {
 }
 @media all and (min-width: $tablet) {
    #contact section.center {
+      // width: 60%;
+      // margin-left: auto;
+      // margin-right: auto;
       width: 60%;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 4em auto 5em;
    }
    #contact .text, #contact form {
-      margin-bottom: 3rem;
+      // margin-bottom: 3rem;
    }
 }
 @media all and (min-width: $medium) {
    #contact {
       .text {
-         float: left;
-         width: 40%;
+         width: 80%;
+         margin: 0 auto;
       }
-      form {
-         float: right;
-         width: 53%;
-      }
+      // form {
+      //    float: right;
+      //    width: 53%;
+      // }
    }
 }
 

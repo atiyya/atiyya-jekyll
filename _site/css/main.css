@@ -704,18 +704,11 @@ form {
 @media all and (min-width: 50.75em) {
   #contact section.center, #contact #home-section section.text, #home-section #contact section.text, #contact #portfolio section.details, #portfolio #contact section.details, #contact #about > section.text {
     width: 60%;
-    margin-left: auto;
-    margin-right: auto; }
-
-  #contact .text, #contact form {
-    margin-bottom: 3rem; } }
+    margin: 4em auto 5em; } }
 @media all and (min-width: 87.5em) {
   #contact .text {
-    float: left;
-    width: 40%; }
-  #contact form {
-    float: right;
-    width: 53%; } }
+    width: 80%;
+    margin: 0 auto; } }
 /* Footer
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
